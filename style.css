@@ -1,0 +1,151 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Nunito", Arial, Helvetica, sans-serif; /*alternatif arial reguler letter spacing 6% or bold 2%*/
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 28px;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 16px;
+  }
+
+  .container > h2 {
+    color: rgb(50, 50, 50);
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .container > label {
+    display: flex;
+    margin: 12px 0;
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .container p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    color: #b4b4b4;
+    border-color: #b4b4b4;
+    border-radius: 0.3em;
+    font-weight: bold;
+  }
+
+  button {
+    background-color: rgb(76, 48, 138);
+    color: #fff;
+    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background-color: rgb(33, 10, 82);
+  }
+
+  button:disabled {
+    background-color: #9b9b9b; /* Warna yang berbeda untuk tombol yang dinonaktifkan */
+    cursor: not-allowed;
+  }
+
+  #result {
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgb(50, 50, 50);
+  }
+
+  #bmi,
+  #category {
+    font-family: "Roboto";
+    font-weight: 900;
+    color: rgb(0, 0, 0); /* Warna yang berbeda untuk BMI */
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    padding: auto;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+  }
+  .modalImage {
+    margin-bottom: 24px;
+    max-width: 400px;
+    height: auto;
+  }
+  #modalLink {
+    color: #ffffff;
+  }
+  .modal-content #modalLink:hover {
+    color: rgb(163, 83, 255);
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #fff;
+  }
+  
+  #info {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  #icon:hover + #info {
+    opacity: 1;
+    visibility: visible;
+    z-index: -1;
+  }
+
+  #bmi-guide {
+    width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .material-symbols-outlined{
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .material-symbols-outlined:hover{
+    color: rgb(118, 29, 220);
+  }
